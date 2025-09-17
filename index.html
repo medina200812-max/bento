@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | Bento grid</title>
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      body {
+        display: grid;
+        min-height: 100vh;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        place-content: center;
+        place-items: center;
+        background-color: rgb(225, 223, 223);
+      }
+      .container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(10, 1fr);
+        width: 900px;
+        height: 600px;
+        gap: 20px;
+        font-family: DM Sans;
+      }
+      .box1 {
+        background-color: bisque;
+        grid-column: 1/2;
+        grid-row: 1/6;
+        border-radius: 7px;
+        padding: 20px;
+      }
+      .box2 {
+        background-color: hsl(256, 67%, 59%);
+        grid-column: 2/4;
+        grid-row: 1/5;
+        border-radius: 7px;
+        padding: 20px;
+      }
+      .box3 {
+        background-color: hsl(256, 86%, 83%);
+        grid-column: 4/5;
+        grid-row: 1/8;
+        border-radius: 7px;
+        overflow: hidden;
+        padding: 20px;
+      }
+      .box4 {
+        background-color: hsl(39, 100%, 71%);
+        grid-column: 1/2;
+        grid-row: 6/11;
+        border-radius: 7px;
+        padding: 20px;
+      }
+      .box5 {
+        background-color: white;
+        grid-column: 2/3;
+        grid-row: 5/8;
+        border-radius: 7px;
+        overflow: hidden;
+        padding: 20px;
+      }
+      .box6 {
+        background-color: hsl(39, 100%, 71%);
+        grid-column: 3/4;
+        grid-row: 5/8;
+        border-radius: 7px;
+        overflow: hidden;
+        padding: 20px;
+      }
+      .box7 {
+        background-color: white;
+        grid-column: 2/3;
+        grid-row: 8/11;
+        border-radius: 7px;
+        padding: 20px;
+      }
+      .box8 {
+        background-color: hsl(256, 67%, 59%);
+        grid-column: 3/5;
+        grid-row: 8/11;
+        border-radius: 7px;
+        overflow: hidden;
+        padding: 20px;
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box1">
+        <p
+          style="
+            font-family: DM Sans;
+            font-size: 25px;
+            letter-spacing: -1.5px;
+            line-height: 1;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+          "
+        >
+          Create and schedule content
+          <em style="font-family: DM Sans; color: hsl(256, 67%, 59%)"
+            >quicker.</em
+          >
+        </p>
+        <img
+          style="width: 150px"
+          src="./assets/images/illustration-create-post.webp"
+          alt=""
+        />
+      </div>
+      <div class="box2">
+        <p
+          style="
+            font-family: DM Sans;
+            text-align: center;
+            color: white;
+            margin-top: -5px;
+            font-size: 40px;
+            letter-spacing: -1.5px;
+            line-height: 1;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+          "
+        >
+          Social Media <span style="color: hsl(39, 100%, 71%)">10x </span
+          ><em>Faster</em> with Al
+        </p>
+        <img
+          style="width: 150px; margin-left: 120px; margin-top: -10px"
+          src="./assets/images/illustration-five-stars.webp"
+          alt=""
+        />
+        <p
+          style="
+            font-family: DM Sans;
+            text-align: center;
+            color: white;
+            margin-top: 15px;
+            font-size: 15px;
+            opacity: 0.8;
+            letter-spacing: -1.5px;
+            line-height: 1;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+          "
+        >
+          Over 4,000 5-star reviews
+        </p>
+      </div>
+      <div class="box3">
+        <p
+          style="
+            font-family: DM Sans;
+            margin-top: -5px;
+            font-size: 20px;
+            letter-spacing: -1.5px;
+            line-height: 1;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+          "
+        >
+          Schedule to social media.
+        </p>
+        <img
+          style="width: 250px"
+          src="./assets/images/illustration-schedule-posts.webp"
+          alt=""
+        />
+        <p
+          style="
+            font-family: DM Sans;
+            font-size: 15px;
+            letter-spacing: -1.5px;
+            line-height: 1;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+          "
+        >
+          Optimize post timings to publish content at the perfect time for your
+          audience.
+        </p>
+      </div>
+      <div class="box4">
+        <p
+          style="
+            font-family: DM Sans;
+            font-size: 22px;
+            letter-spacing: -1.5px;
+            line-height: 1;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+          "
+        >
+          Write your content using Al.
+        </p>
+        <img
+          style="width: 150px"
+          src="./assets/images/illustration-ai-content.webp"
+          alt=""
+        />
+      </div>
+      <div class="box5">
+        <img
+          style="width: 200px"
+          src="./assets/images/illustration-multiple-platforms.webp"
+          alt=""
+        />
+        <p
+          style="
+            font-family: DM Sans;
+            font-size: 22px;
+            letter-spacing: -1.5px;
+            line-height: 1;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+          "
+        >
+          Manage multiple accounts and platforms.
+        </p>
+      </div>
+      <div class="box6">
+        <p
+          style="
+            font-family: DM Sans;
+            margin-top: -15px;
+            font-size: 22px;
+            letter-spacing: -1.5px;
+            line-height: 1;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+          "
+        >
+          Maintain a consistent posting, schedule.
+        </p>
+        <img
+          style="width: 150px"
+          src="./assets/images/illustration-consistent-schedule.webp"
+          alt=""
+        />
+      </div>
+      <div class="box7">
+        <p
+          style="
+            font-family: DM Sans;
+            font-size: 35px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            letter-spacing: -1.5px;
+            margin-top: -10px;
+          "
+        >
+          >56%
+        </p>
+        <p style="font-family: DM Sans; margin-top: -20px">
+          faster audience growth
+        </p>
+        <img
+          style="width: 100px"
+          src="./assets/images/illustration-audience-growth.webp"
+          alt=""
+        />
+      </div>
+      <div class="box8">
+        <img
+          style="width: 150px"
+          src="./assets/images/illustration-grow-followers.webp"
+          alt=""
+        />
+        <p
+          style="
+            font-family: DM Sans;
+            color: white;
+            font-size: 27px;
+            letter-spacing: -1px;
+            line-height: 1;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+          "
+        >
+          Grow followers <br />with non-stop<br />content.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
