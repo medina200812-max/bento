@@ -102,6 +102,45 @@
         flex-direction: row;
         gap: 20px;
       }
+      @media (max-width: 500px) {
+        body {
+          padding: 40px;
+        }
+
+        .container {
+          width: 100%;
+          height: auto;
+          padding: 15px;
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+        }
+
+        .box1,
+        .box2,
+        .box3,
+        .box4,
+        .box5,
+        .box6,
+        .box7,
+        .box8 {
+          grid-column: auto;
+          grid-row: auto;
+          width: 100%;
+          height: auto;
+        }
+
+        .box2 img,
+        .box3 img,
+        .box4 img,
+        .box5 img,
+        .box6 img,
+        .box7 img,
+        .box8 img {
+          width: 100%;
+          height: auto;
+        }
+      }
     </style>
   </head>
   <body>
